@@ -1,0 +1,134 @@
+body {
+    background-color: #000000;
+    color: #ffffff;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    line-height: 1.1;
+    margin: 0;
+    background: linear-gradient(180deg, #ffffff 0%, #4dabff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 30px rgba(77, 171, 255, 0.3);
+}
+
+.scroll-indicator {
+    margin-top: 50px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #4dabff;
+    opacity: 0.6;
+}
+
+.stats-section {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #050505;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    padding: 40px;
+    max-width: 1300px;
+}
+
+.stat-item {
+    text-align: center;
+    min-width: 250px;
+}
+
+.counter {
+    font-size: 65px;
+    font-weight: 900;
+    margin: 0;
+    background: linear-gradient(180deg, #4dabff 0%, #0072ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 15px rgba(0, 212, 255, 0.6);
+}
+
+.stat-item p {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #cccccc;
+    margin-top: 10px;
+}
+
+.features {
+    padding: 100px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    color: #ffffff;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.feature-card {
+    background: #0a0a0a;
+    border: 1px solid #1a1a1a;
+    padding: 40px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.feature-card:hover {
+    border-color: #4dabff;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(77, 171, 255, 0.1);
+}
+
+.feature-card .icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.feature-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #bbbbbb;
+    font-weight: 400;
+}
+
+h5 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 75px;
+    color: #4dabff;
+}
