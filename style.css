@@ -127,19 +127,19 @@ h1 {
 }
 
 h5 {
-    font-size: 70px;
+    font-size: 50px;
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: -2px;
     line-height: 1.1;
     margin: 0;
-    background: linear-gradient(180deg, #ffffff 0%, #ff0000 100%);
+    background: linear-gradient(180deg, #ffffff 0%, #0ef706 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 0 0 30px rgba(171, 9, 0, 0.3);
     text-align: center;
-    border: #ffd700 5px solid;
+    border: #000000 5px solid;
 }
 
 .opinie-link-container {
@@ -197,4 +197,19 @@ h5 {
     0% { border-color: rgba(77, 171, 255, 0.3); }
     50% { border-color: rgba(77, 171, 255, 0.6); }
     100% { border-color: rgba(77, 171, 255, 0.3); }
+}
+
+.podtytul {
+    font-size: 25px;
+    font-weight: 900;
+    margin-top: 50px;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    line-height: 1.1;
+    margin: 0;
+    background: linear-gradient(180deg, #ffffff 0%, rgb(255, 215, 0) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 30px rgba(77, 171, 255, 0.3);
 }
