@@ -213,3 +213,73 @@ h5 {
     -webkit-text-fill-color: transparent;
     text-shadow: 0 0 30px rgba(77, 171, 255, 0.3);
 }
+
+.comparison-section {
+    padding: 60px 20px;
+    background-color: #000;
+}
+
+.gold-title {
+    color: #FFD700;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.table-wrapper {
+    overflow-x: auto; 
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+    font-family: Arial, sans-serif;
+    background-color: #0a0a0a;
+    border: 1px solid #222;
+}
+
+.comparison-table th, .comparison-table td {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #222;
+}
+
+.comparison-table thead th {
+    background-color: #111;
+    color: #888;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.comparison-table th.our-course {
+    color: #FFD700;
+    background-color: #1a1a00;
+    font-size: 1.1rem;
+}
+
+.comparison-table td:first-child {
+    text-align: left;
+    font-weight: bold;
+    color: #ccc;
+}
+
+.comparison-table td:last-child {
+    color: #FFD700;
+    font-weight: bold;
+    background-color: rgba(255, 215, 0, 0.05);
+}
+
+.comparison-table tr:hover {
+    background-color: #151515;
+}
+
+@media (max-width: 600px) {
+    .comparison-table th, .comparison-table td {
+        padding: 10px;
+        font-size: 0.85rem;
+    }
+}
