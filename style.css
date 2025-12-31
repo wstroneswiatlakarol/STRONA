@@ -283,3 +283,84 @@ h5 {
         font-size: 0.85rem;
     }
 }
+
+/* Pasek promocji */
+.promo-bar {
+    background: linear-gradient(90deg, #FFD700, #b8860b);
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    font-weight: 900;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.promo-bar .old-price {
+    text-decoration: line-through;
+    opacity: 0.7;
+    margin: 0 5px;
+}
+
+.promo-bar .code {
+    background: #000;
+    color: #FFD700;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin: 0 5px;
+}
+
+/* Header */
+.main-header {
+    background: rgba(0, 0, 0, 0.95);
+    border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: #FFD700;
+    letter-spacing: 2px;
+}
+
+.free-link {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 25px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.free-link:hover {
+    color: #FFD700;
+}
+
+.nav-button {
+    background: transparent;
+    border: 1px solid #FFD700;
+    color: #FFD700;
+    padding: 8px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-button:hover {
+    background: #FFD700;
+    color: #000;
+}
