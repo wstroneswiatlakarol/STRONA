@@ -1,42 +1,13 @@
-h1 {
-    font-size: 35px;
-    text-align: center;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: -2px;
-    line-height: 1.1;
-    margin: 0;
-    background: linear-gradient(180deg, #ffffff 0%, #ff0505 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 30px rgba(77, 171, 255, 0.3);
-}
-
 body {
     background-color: #000000;
     color: #ffffff;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    line-height: 1.6;
 }
 
-.przyklad {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 20px;
-    color: aquamarine;
-    text-decoration: underline;
-}
-
-.odpowiedz {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 20px;
-    color: coral;
-    text-decoration: underline;
-}
-
-/* Pasek promocji */
+/* Header & Promo Bar (Spójny z resztą stron) */
 .promo-bar {
     background: linear-gradient(90deg, #FFD700, #b8860b);
     color: #000;
@@ -44,29 +15,16 @@ body {
     padding: 10px;
     font-weight: 900;
     font-size: 0.85rem;
-    letter-spacing: 1px;
     text-transform: uppercase;
 }
 
-.promo-bar .old-price {
-    text-decoration: line-through;
-    opacity: 0.7;
-    margin: 0 5px;
-}
+.promo-bar .code { background: #000; color: #FFD700; padding: 2px 8px; border-radius: 4px; }
+.promo-bar .old-price { text-decoration: line-through; opacity: 0.7; }
 
-.promo-bar .code {
-    background: #000;
-    color: #FFD700;
-    padding: 2px 8px;
-    border-radius: 4px;
-    margin: 0 5px;
-}
-
-/* Header */
 .main-header {
     background: rgba(0, 0, 0, 0.95);
     border-bottom: 1px solid rgba(255, 215, 0, 0.2);
-    padding: 20px 0;
+    padding: 15px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -81,38 +39,99 @@ body {
     padding: 0 20px;
 }
 
-.logo {
+.logo { font-weight: 900; font-size: 1.3rem; color: #FFD700; text-decoration: none; letter-spacing: 1px; }
+.nav-button { border: 1px solid #FFD700; color: #FFD700; padding: 8px 20px; text-decoration: none; border-radius: 5px; font-weight: 700; }
+.free-link { color: #fff; text-decoration: none; margin-right: 20px; font-size: 0.9rem; }
+
+/* Sekcja Główna */
+.contact-section {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: clamp(1.8rem, 6vw, 3.5rem);
     font-weight: 900;
-    font-size: 1.5rem;
-    color: #FFD700;
-    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin-bottom: 40px;
+    background: linear-gradient(180deg, #ffffff 0%, #ff0505 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.free-link {
-    color: #fff;
-    text-decoration: none;
-    margin-right: 25px;
-    font-size: 0.9rem;
-    font-weight: 600;
-    transition: 0.3s;
+/* Stylizacja "Chatu" */
+.chat-container {
+    background: #0a0a0a;
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid #1a1a1a;
+    margin-bottom: 40px;
+    text-align: left;
 }
 
-.free-link:hover {
-    color: #FFD700;
+.message {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
 }
 
-.nav-button {
-    background: transparent;
-    border: 1px solid #FFD700;
-    color: #FFD700;
-    padding: 8px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: 600;
-    transition: 0.3s;
+.label {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 900;
+    margin-bottom: 5px;
 }
 
-.nav-button:hover {
-    background: #FFD700;
+.przyklad {
+    background: rgba(127, 255, 212, 0.05);
+    border-left: 4px solid aquamarine;
+    color: aquamarine;
+}
+
+.odpowiedz {
+    background: rgba(255, 127, 80, 0.05);
+    border-left: 4px solid coral;
+    color: coral;
+}
+
+.message p { margin: 0; font-size: 1.1rem; font-weight: 700; }
+
+/* Alert i przycisk */
+.info-alert {
+    background: rgba(255, 0, 0, 0.1);
+    border: 1px solid #ff0000;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.info-alert p { color: #ff5555; font-size: 1.1rem; margin: 0; }
+
+.email-btn {
+    display: inline-block;
+    background: #ffffff;
     color: #000;
+    padding: 20px 50px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 900;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.email-btn:hover {
+    transform: scale(1.05);
+    background: #ff0505;
+    color: #fff;
+}
+
+/* Responsywność */
+@media (max-width: 600px) {
+    .header-container { flex-direction: column; gap: 15px; }
+    .chat-container { padding: 15px; }
+    .email-btn { width: 100%; box-sizing: border-box; }
 }
